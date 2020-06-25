@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Rechercher un produit
+        </title>
+    </head>
+    <form method="POST" action="{{ url_for('form') }}">
+        {{ form.csrf_token }}
+        {{  form.searchfield.label }}
+        {{  form.searchfield }}
+        {{  form.catselect.label }}
+        {{  form.catselect }}
+        {{  form.triselect.label }}
+        {{  form.triselect }}
+        <input type="submit" value="Rechercher"> 
+    </form>
+</html>
